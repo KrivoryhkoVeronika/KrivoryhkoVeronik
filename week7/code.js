@@ -6,15 +6,16 @@ import * as THREE from 'three';
 // Our Javascript will go here.
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 3000 );
+const camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.1, 3000 );
 
 const renderer = new THREE.WebGLRenderer();
+renderer.setClearColor(0xCBEFFF); 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
 const pyramidgeometry=new THREE.CylinderGeometry(0, 0.8, 2, 4); 
-const pyramidmaterial=new THREE.MeshLambertMaterial( {color: 0xF566687});
+const pyramidmaterial=new THREE.MeshLambertMaterial( {color: 0xF3FFE2});
 const pyramidmesh=new THREE.Mesh(pyramidgeometry, pyramidmaterial);
 pyramidmesh.position.set(0, 2, -10); 
 scene.add(pyramidmesh); 
