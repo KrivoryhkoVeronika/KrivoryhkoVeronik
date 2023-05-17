@@ -27,8 +27,8 @@ window.addEventListener("DOMContentLoaded", () => {
       'uploads_files_3998079_burger_2.glb',
       // called when the resource is loaded
       function ( gltf ) {
-         gltf.scene.scale.set(0.1, 0.1, 0.1);
-         gltf.scene.position.z=-25;
+         //gltf.scene.scale.set(0.1, 0.1, 0.1);
+         gltf.scene.position.z=-6;
          gltf.scene.rotation.y=+Math.PI/6; 
          scene.add( gltf.scene );
           //console.log(gtfl);
