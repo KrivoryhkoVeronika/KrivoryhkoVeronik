@@ -60,7 +60,7 @@ function init()
 		new THREE.MeshBasicMaterial( { map: loader.load( 'coffe3.jpg') } ),
 		new THREE.MeshBasicMaterial( { map: loader.load( 'coffe4.jpg') } ),
 		new THREE.MeshBasicMaterial( { map: loader.load( 'coffe5.jpg') } ),
-		new THREE.MeshBasicMaterial( { map: loader.load( 'coffe6.jpg') } ),
+		new THREE.MeshBasicMaterial( { map: loader.load( 'cofee6.jpg') } ),
 	];
 
 	cube = new THREE.Mesh( boxgeometry, boxmaterials );
